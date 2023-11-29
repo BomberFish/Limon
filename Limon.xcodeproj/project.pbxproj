@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D638A1D02B1773460077CAC5 /* JIT.m in Sources */ = {isa = PBXBuildFile; fileRef = D638A1CF2B1773460077CAC5 /* JIT.m */; };
 		D638A1D52B177A8D0077CAC5 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = D638A1D42B177A8D0077CAC5 /* fishhook.c */; };
+		D638A1D92B178C170077CAC5 /* JIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D638A1D82B178C170077CAC5 /* JIT.swift */; };
 		E606DAEA2B05DC3B0080577C /* libavcodec.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B851742B05D7C50087363D /* libavcodec.xcframework */; };
 		E606DAEB2B05DC3B0080577C /* libavcodec.xcframework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E6B851742B05D7C50087363D /* libavcodec.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E606DAEC2B05DC3C0080577C /* libavfilter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B851702B05D7C50087363D /* libavfilter.xcframework */; };
@@ -501,6 +502,7 @@
 		D638A1D42B177A8D0077CAC5 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		D638A1D62B177AB20077CAC5 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		D638A1D72B177E5F0077CAC5 /* JIT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JIT.h; sourceTree = "<group>"; };
+		D638A1D82B178C170077CAC5 /* JIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIT.swift; sourceTree = "<group>"; };
 		E606DAF62B05F78B0080577C /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libMoltenVK.dylib; sourceTree = "<group>"; };
 		E615378C2AD3C193005053B9 /* LMGameImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMGameImporter.h; sourceTree = "<group>"; };
 		E615378D2AD3C193005053B9 /* LMGameImporter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LMGameImporter.mm; sourceTree = "<group>"; };
@@ -1382,7 +1384,7 @@
 		E65E54552ACFA5C7004FD046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E65E54582ACFA5C7004FD046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E65E545A2ACFA5C7004FD046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E65E54602ACFA9D4004FD046 /* Limon-TrollStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Limon-TrollStore.entitlements"; sourceTree = "<group>"; };
+		E65E54602ACFA9D4004FD046 /* LimonTS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LimonTS.entitlements; sourceTree = "<group>"; };
 		E65E97042ACFB2E0004FD046 /* ini.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ini.c; sourceTree = "<group>"; };
 		E65E97052ACFB2E0004FD046 /* INIReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INIReader.cpp; sourceTree = "<group>"; };
 		E65E97072ACFB2E0004FD046 /* parser_shbin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser_shbin.cpp; sourceTree = "<group>"; };
@@ -1509,6 +1511,7 @@
 				D638A1D72B177E5F0077CAC5 /* JIT.h */,
 				D638A1D42B177A8D0077CAC5 /* fishhook.c */,
 				D638A1D62B177AB20077CAC5 /* fishhook.h */,
+				D638A1D82B178C170077CAC5 /* JIT.swift */,
 			);
 			path = JIT;
 			sourceTree = "<group>";
@@ -3208,7 +3211,7 @@
 				E65E545A2ACFA5C7004FD046 /* Info.plist */,
 				E65E54572ACFA5C7004FD046 /* LaunchScreen.storyboard */,
 				D638A1CE2B1772300077CAC5 /* Limon.entitlements */,
-				E65E54602ACFA9D4004FD046 /* Limon-TrollStore.entitlements */,
+				E65E54602ACFA9D4004FD046 /* LimonTS.entitlements */,
 				E6B7AD372ACFF11900859FC3 /* Limon-Bridging-Header.h */,
 			);
 			path = Limon;
@@ -3637,6 +3640,7 @@
 				E6CD99D52AF0A3BC00AAF7F9 /* RightPadView.swift in Sources */,
 				E61537992AD3CB4B005053B9 /* LMEmulationWindow_Vulkan.mm in Sources */,
 				E634C96E2B05CF7F00F39194 /* dynamic_library.cpp in Sources */,
+				D638A1D92B178C170077CAC5 /* JIT.swift in Sources */,
 				E634C8EA2B05CF7E00F39194 /* rpc_server.cpp in Sources */,
 				E634C8332B05CF7E00F39194 /* pxi.cpp in Sources */,
 				E634C7FD2B05CF7E00F39194 /* time_stretch.cpp in Sources */,

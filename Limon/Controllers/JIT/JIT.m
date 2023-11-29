@@ -102,7 +102,7 @@ int enableTSJIT(int argc, char **argv) {
                 result = 0;
             }
         } else {
-            NSLog(@"[Pre-init] Failed to enable JIT: posix_spawn() failed errno %d", errno);
+            NSLog(@"Failed to enable JIT: posix_spawn() failed errno %d", errno);
             result = 0;
         }
     } else {
