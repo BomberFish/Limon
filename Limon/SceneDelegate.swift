@@ -34,11 +34,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                                                     icon: .init(systemName: "app.badge.fill")?.applyingSymbolConfiguration(.init(paletteColors: [.systemRed, .tintColor])))
         // welcomeController.set_shouldInlineButtontray(true)
         
-<<<<<<< HEAD
         welcomeController.addBulletedListItem(withTitle: "Added Extended Virtual Addressing",
                                               description: "Added Extended Virtual Addressing to improve performance overall but more so for when JIT is not enabled",
                                               image: .init(systemName: "memorychip.fill"))
-=======
         
         welcomeController.addBulletedListItem(withTitle: "Fixed Menu Music Crash", description: "Fixed a crash that occurred when no menu.mp3 is available",
                                               image: .init(systemName: "speaker.wave.3.fill"))
@@ -46,7 +44,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                                               image: .init(systemName: "moonphase.first.quarter"))
         welcomeController.addBulletedListItem(withTitle: "Improved Out-Of-Game Settings Menu", description: "Improved how the out-of-game settings menu is displayed making it easier to follow and understand",
                                               image: .init(systemName: "gearshape.fill"))
->>>>>>> 46f44666a10b156bfe61ce5bdbca30ce3a723f6e
         
         
         var acknowledgeButtonConfiguration = UIButton.Configuration.filled()
