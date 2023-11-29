@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D638A1D02B1773460077CAC5 /* JIT.m in Sources */ = {isa = PBXBuildFile; fileRef = D638A1CF2B1773460077CAC5 /* JIT.m */; };
+		D638A1D52B177A8D0077CAC5 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = D638A1D42B177A8D0077CAC5 /* fishhook.c */; };
 		E606DAEA2B05DC3B0080577C /* libavcodec.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B851742B05D7C50087363D /* libavcodec.xcframework */; };
 		E606DAEB2B05DC3B0080577C /* libavcodec.xcframework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E6B851742B05D7C50087363D /* libavcodec.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E606DAEC2B05DC3C0080577C /* libavfilter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B851702B05D7C50087363D /* libavfilter.xcframework */; };
@@ -495,6 +497,9 @@
 
 /* Begin PBXFileReference section */
 		D638A1CE2B1772300077CAC5 /* Limon.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Limon.entitlements; sourceTree = "<group>"; };
+		D638A1CF2B1773460077CAC5 /* JIT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JIT.m; sourceTree = "<group>"; };
+		D638A1D42B177A8D0077CAC5 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		D638A1D62B177AB20077CAC5 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		E606DAF62B05F78B0080577C /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libMoltenVK.dylib; sourceTree = "<group>"; };
 		E615378C2AD3C193005053B9 /* LMGameImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMGameImporter.h; sourceTree = "<group>"; };
 		E615378D2AD3C193005053B9 /* LMGameImporter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LMGameImporter.mm; sourceTree = "<group>"; };
@@ -1496,6 +1501,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D638A1D22B1779D50077CAC5 /* JIT */ = {
+			isa = PBXGroup;
+			children = (
+				D638A1CF2B1773460077CAC5 /* JIT.m */,
+				D638A1D42B177A8D0077CAC5 /* fishhook.c */,
+				D638A1D62B177AB20077CAC5 /* fishhook.h */,
+			);
+			path = JIT;
+			sourceTree = "<group>";
+		};
 		E615378B2AD3C178005053B9 /* LMGameImporter */ = {
 			isa = PBXGroup;
 			children = (
@@ -3350,6 +3365,7 @@
 		E6B7AD352ACFF06200859FC3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D638A1D22B1779D50077CAC5 /* JIT */,
 				E615379A2AD3CC69005053B9 /* LMEmulationController */,
 				E6E196DF2AD3AB040057C3B3 /* LMGamesController */,
 				E61EAE842ADFAA4D00F73655 /* LMImportingController */,
@@ -3646,6 +3662,7 @@
 				E634C8922B05CF7E00F39194 /* mutex.cpp in Sources */,
 				E634C8FA2B05CF7E00F39194 /* vk_pipeline_cache.cpp in Sources */,
 				E65E97752ACFB2E2004FD046 /* assembler.cpp in Sources */,
+				D638A1D52B177A8D0077CAC5 /* fishhook.c in Sources */,
 				E634C88F2B05CF7E00F39194 /* svc.cpp in Sources */,
 				E634C8372B05CF7E00F39194 /* ndm_u.cpp in Sources */,
 				E61EAEAF2ADFD41F00F73655 /* LMLargeImageTitleController.swift in Sources */,
@@ -3881,6 +3898,7 @@
 				E634C7FB2B05CF7E00F39194 /* hle.cpp in Sources */,
 				E634C8402B05CF7E00F39194 /* mic_u.cpp in Sources */,
 				E65E97712ACFB2E2004FD046 /* INIReader.cpp in Sources */,
+				D638A1D02B1773460077CAC5 /* JIT.m in Sources */,
 				E634C8072B05CF7E00F39194 /* recorder.cpp in Sources */,
 				E6E196FF2AD3B9E60057C3B3 /* LMSupplementaryView.swift in Sources */,
 				E634C80D2B05CF7E00F39194 /* gpu.cpp in Sources */,

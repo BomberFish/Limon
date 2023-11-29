@@ -12,3 +12,5 @@
 
 #import "ChatKit.h"
 #import "OnboardingKit.h"
+
+#import "JIT.h"
