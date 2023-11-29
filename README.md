@@ -8,7 +8,7 @@ This fork adds support for JIT through TrollStore, based on work by [RedNick16](
 
 ## Why not just inject [TrollStoreJitEnabler](https://github.com/Rednick16/TrollStoreJitEnabler)?
 
-I wanted a more integrated experience in general. I'll probably try that sometime while I wait for the original author to make the build dependencies public.
+I wanted a more integrated experience in general. I'll probably try that sometime while I wait for the original author to release build scripts for the dependencies.
 
 ## Building
 
