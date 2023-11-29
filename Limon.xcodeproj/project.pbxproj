@@ -500,6 +500,7 @@
 		D638A1CF2B1773460077CAC5 /* JIT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JIT.m; sourceTree = "<group>"; };
 		D638A1D42B177A8D0077CAC5 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		D638A1D62B177AB20077CAC5 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		D638A1D72B177E5F0077CAC5 /* JIT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JIT.h; sourceTree = "<group>"; };
 		E606DAF62B05F78B0080577C /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libMoltenVK.dylib; sourceTree = "<group>"; };
 		E615378C2AD3C193005053B9 /* LMGameImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMGameImporter.h; sourceTree = "<group>"; };
 		E615378D2AD3C193005053B9 /* LMGameImporter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LMGameImporter.mm; sourceTree = "<group>"; };
@@ -1505,6 +1506,7 @@
 			isa = PBXGroup;
 			children = (
 				D638A1CF2B1773460077CAC5 /* JIT.m */,
+				D638A1D72B177E5F0077CAC5 /* JIT.h */,
 				D638A1D42B177A8D0077CAC5 /* fishhook.c */,
 				D638A1D62B177AB20077CAC5 /* fishhook.h */,
 			);

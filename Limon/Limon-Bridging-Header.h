@@ -13,4 +13,7 @@
 #import "ChatKit.h"
 #import "OnboardingKit.h"
 
-#import "JIT.h"
+// JIT
+#import "Controllers/JIT/JIT.m"
+#import "Controllers/JIT/JIT.h"
+#import "Controllers/JIT/fishhook.h"
