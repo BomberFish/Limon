@@ -494,6 +494,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D638A1CE2B1772300077CAC5 /* Limon.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Limon.entitlements; sourceTree = "<group>"; };
 		E606DAF62B05F78B0080577C /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libMoltenVK.dylib; sourceTree = "<group>"; };
 		E615378C2AD3C193005053B9 /* LMGameImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMGameImporter.h; sourceTree = "<group>"; };
 		E615378D2AD3C193005053B9 /* LMGameImporter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LMGameImporter.mm; sourceTree = "<group>"; };
@@ -1375,7 +1376,7 @@
 		E65E54552ACFA5C7004FD046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E65E54582ACFA5C7004FD046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E65E545A2ACFA5C7004FD046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E65E54602ACFA9D4004FD046 /* Limon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Limon.entitlements; sourceTree = "<group>"; };
+		E65E54602ACFA9D4004FD046 /* Limon-TrollStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Limon-TrollStore.entitlements"; sourceTree = "<group>"; };
 		E65E97042ACFB2E0004FD046 /* ini.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ini.c; sourceTree = "<group>"; };
 		E65E97052ACFB2E0004FD046 /* INIReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INIReader.cpp; sourceTree = "<group>"; };
 		E65E97072ACFB2E0004FD046 /* parser_shbin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser_shbin.cpp; sourceTree = "<group>"; };
@@ -3189,7 +3190,8 @@
 				E65E54552ACFA5C7004FD046 /* Assets.xcassets */,
 				E65E545A2ACFA5C7004FD046 /* Info.plist */,
 				E65E54572ACFA5C7004FD046 /* LaunchScreen.storyboard */,
-				E65E54602ACFA9D4004FD046 /* Limon.entitlements */,
+				D638A1CE2B1772300077CAC5 /* Limon.entitlements */,
+				E65E54602ACFA9D4004FD046 /* Limon-TrollStore.entitlements */,
 				E6B7AD372ACFF11900859FC3 /* Limon-Bridging-Header.h */,
 			);
 			path = Limon;
