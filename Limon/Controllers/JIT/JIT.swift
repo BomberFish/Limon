@@ -32,7 +32,7 @@ func spawnPtraceChild(argc: Int32, argv: UnsafeMutablePointer<UnsafeMutablePoint
 }
 
 func enablePtraceHack(argc: Int32, argv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>) -> Bool {
-    let isAlreadyDebugged: Bool = getppid() != 1
+    let isAlreadyDebugged: Bool = isJITAlreadyEnabled(true)
     
     let ret = ptrace(0 /* PT_TRACE_ME */, 0, NULL, 0)
     
@@ -58,10 +58,14 @@ func enableJIT() -> Bool {
             NSLog("[JIT] holy shit it worked (un womp womp)")
         case 0:
             NSLog("[JIT] even more shit failed (womp womp)")
+            return false
         case -1:
             print("[JIT] no trollstore? <megamind here>")
+            return false
         default:
             print("[JIT] unknown error")
+            return false
         }
     }
+    return true
 }
