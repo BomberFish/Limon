@@ -6,6 +6,10 @@ import Foundation
 import Darwin
 import MachO
 
+// thanks: saagarjha (https://saagarjha.com/blog/2020/02/23/jailed-just-in-time-compilation-on-ios/)
+let PT_TRACE_ME: CInt = 0
+let ptrace = unsafeBitCast(dlsym(dlopen(nil, RTLD_LAZY), "ptrace"), to: (@convention(c) (CInt, pid_t, caddr_t?, CInt) -> CInt).self)
+
 // thanks: UTM project
 func spawnPtraceChild(argc: Int32, argv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>) -> Bool {
 //    let argc = CommandLine.argc
@@ -34,12 +38,13 @@ func spawnPtraceChild(argc: Int32, argv: UnsafeMutablePointer<UnsafeMutablePoint
 func enablePtraceHack(argc: Int32, argv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>) -> Bool {
     let isAlreadyDebugged: Bool = isJITAlreadyEnabled(true)
     
-    let ret = ptrace(0 /* PT_TRACE_ME */, 0, NULL, 0)
+    let ret = ptrace(PT_TRACE_ME, 0, NULL, 0);
     
     if ret < 0 {
         return false
     }
 }
+
 
 
 func enableJIT() -> Bool {
