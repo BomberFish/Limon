@@ -6,8 +6,9 @@ import Foundation
 import Darwin
 import MachO
 
-// thanks: saagarjha (https://saagarjha.com/blog/2020/02/23/jailed-just-in-time-compilation-on-ios/)
+// thanks: saagarjha
 let PT_TRACE_ME: CInt = 0
+let PT_SIGEXC: CInt = 12
 let ptrace = unsafeBitCast(dlsym(dlopen(nil, RTLD_LAZY), "ptrace"), to: (@convention(c) (CInt, pid_t, caddr_t?, CInt) -> CInt).self)
 
 // thanks: UTM project
@@ -40,6 +41,16 @@ func enablePtraceHack(argc: Int32, argv: UnsafeMutablePointer<UnsafeMutablePoint
     
     let ret = ptrace(PT_TRACE_ME, 0, NULL, 0);
     
+    // MARK: Make system not crash (like holy shit why does this happen)
+    ptrace(PT_SIGEXC, 0, NULL, 0);
+    let port: mach_port_t = MACH_PORT_NULL
+    mach_port_insert_right(mach_task_self(), port, port, MACH_MSG_TYPE_MAKE_SEND);
+    // PT_SIGEXC maps signals to EXC_SOFTWARE; note that this will interfere
+    // with the debugger (which will try to do the same thing via PT_ATTACHEXC).
+    // Usually you'd check for that and predicate the execution of the following
+    // code on whether it's attached.
+    task_set_exception_ports(mach_task_self(), EXC_MASK_SOFTWARE, port, EXCEPTION_DEFAULT, THREAD_STATE_NONE);
+    create_thread(port)
     if ret < 0 {
         return false
     }

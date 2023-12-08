@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61B4C7D2B22BA0100D6649C /* exception.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B4C7C2B22BA0100D6649C /* exception.m */; };
 		D638A1D02B1773460077CAC5 /* JIT.m in Sources */ = {isa = PBXBuildFile; fileRef = D638A1CF2B1773460077CAC5 /* JIT.m */; };
 		D638A1D52B177A8D0077CAC5 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = D638A1D42B177A8D0077CAC5 /* fishhook.c */; };
 		D638A1D92B178C170077CAC5 /* JIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D638A1D82B178C170077CAC5 /* JIT.swift */; };
@@ -498,6 +499,8 @@
 
 /* Begin PBXFileReference section */
 		D61B4C792B22ADD500D6649C /* ptrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ptrace.h; sourceTree = "<group>"; };
+		D61B4C7C2B22BA0100D6649C /* exception.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exception.m; sourceTree = "<group>"; };
+		D61B4C7E2B22BB3800D6649C /* exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exception.h; sourceTree = "<group>"; };
 		D638A1CE2B1772300077CAC5 /* Limon.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Limon.entitlements; sourceTree = "<group>"; };
 		D638A1CF2B1773460077CAC5 /* JIT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JIT.m; sourceTree = "<group>"; };
 		D638A1D42B177A8D0077CAC5 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
@@ -1513,6 +1516,8 @@
 				D638A1D42B177A8D0077CAC5 /* fishhook.c */,
 				D638A1D62B177AB20077CAC5 /* fishhook.h */,
 				D638A1D82B178C170077CAC5 /* JIT.swift */,
+				D61B4C7C2B22BA0100D6649C /* exception.m */,
+				D61B4C7E2B22BB3800D6649C /* exception.h */,
 				D61B4C792B22ADD500D6649C /* ptrace.h */,
 			);
 			path = JIT;
@@ -3594,6 +3599,7 @@
 				E634C8352B05CF7E00F39194 /* mvd.cpp in Sources */,
 				E634C96C2B05CF7F00F39194 /* cityhash.cpp in Sources */,
 				E634C88C2B05CF7E00F39194 /* lock.cpp in Sources */,
+				D61B4C7D2B22BA0100D6649C /* exception.m in Sources */,
 				E65E977E2ACFB2E2004FD046 /* lodepng_fuzzer.cpp in Sources */,
 				E634C8A02B05CF7E00F39194 /* session.cpp in Sources */,
 				E634C96B2B05CF7F00F39194 /* texture.cpp in Sources */,
