@@ -15,9 +15,6 @@ let ptrace = unsafeBitCast(dlsym(dlopen(nil, RTLD_LAZY), "ptrace"), to: (@conven
 func spawnPtraceChild(argc: Int32, argv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>) -> Bool {
 //    let argc = CommandLine.argc
 //    let argv = UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>.allocate(capacity: Int(argc))
-    defer {
-        argv.deallocate() // free
-    }
     for i in 0..<Int(argc) {
         argv[i] = UnsafeMutablePointer<Int8>(mutating: CommandLine.unsafeArgv[i])
     }
@@ -61,6 +58,9 @@ func enablePtraceHack(argc: Int32, argv: UnsafeMutablePointer<UnsafeMutablePoint
 func enableJIT() -> Bool {
     let argc = CommandLine.argc
     let argv = UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>.allocate(capacity: Int(argc))
+    defer {
+        argv.deallocate() // free
+    }
     if spawnPtraceChild(argc: argc, argv: argv) {
         NSLog("[JIT] spawned child (just like your mom)")
     } else if enablePtraceHack(argc: argc, argv: argv) {
