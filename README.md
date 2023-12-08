@@ -3,8 +3,7 @@
 Limón is the world's first Nintendo 3DS emulator for iPad and iPhone built on top of **[Citra](https://github.com/citra-emu/citra)** making use of the experimental Vulkan renderer by **[GPUcode](https://github.com/gpucode)** through **[MoltenVK](https://github.com/KhronosGroup/MoltenVK)**, written in Objective-C and Swift.
 
 ## About this fork
-
-This fork adds support for JIT through TrollStore, based on work by [PojavLauncherTeam](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/blob/main/Natives/main.m), [saagarjha](https://saagarjha.com/blog/2020/02/23/jailed-just-in-time-compilation-on-ios/), [RedNick16](https://github.com/Rednick16/TrollStoreJitEnabler), and [C22](https://github.com/c22dev/Lemon/tree/main/emuThreeDS/citra_wrapper/JIT).
+This fork adds support for JIT through TrollStore, based on work by [PojavLauncherTeam](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/blob/main/Natives/main.m), [saagarjha](https://saagarjha.com/blog/2020/02/23/jailed-just-in-time-compilation-on-ios/), [utmapp](https://github.com/utmapp/UTM/blob/main/Services/UTMJailbreak.m), [RedNick16](https://github.com/Rednick16/TrollStoreJitEnabler), and [C22](https://github.com/c22dev/Lemon/tree/main/emuThreeDS/citra_wrapper/JIT).
 
 ## Why not just inject [TrollStoreJitEnabler](https://github.com/Rednick16/TrollStoreJitEnabler)?
 
