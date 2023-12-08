@@ -4,7 +4,7 @@ Limón is the world's first Nintendo 3DS emulator for iPad and iPhone built on t
 
 ## About this fork
 
-This fork adds support for JIT through TrollStore, based on work by [RedNick16](https://github.com/Rednick16/TrollStoreJitEnabler), [PojavLauncherTeam](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/blob/main/Natives/main.m), and [C22](https://github.com/c22dev/Lemon/tree/main/emuThreeDS/citra_wrapper/JIT).
+This fork adds support for JIT through TrollStore, based on work by [RedNick16](https://github.com/Rednick16/TrollStoreJitEnabler), [PojavLauncherTeam](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/blob/main/Natives/main.m), [utmapp](https://github.com/utmapp/UTM/blob/main/Services/UTMJailbreak.m), and [C22](https://github.com/c22dev/Lemon/tree/main/emuThreeDS/citra_wrapper/JIT).
 
 ## Why not just inject [TrollStoreJitEnabler](https://github.com/Rednick16/TrollStoreJitEnabler)?
 
