@@ -497,6 +497,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D61B4C792B22ADD500D6649C /* ptrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ptrace.h; sourceTree = "<group>"; };
 		D638A1CE2B1772300077CAC5 /* Limon.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Limon.entitlements; sourceTree = "<group>"; };
 		D638A1CF2B1773460077CAC5 /* JIT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JIT.m; sourceTree = "<group>"; };
 		D638A1D42B177A8D0077CAC5 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
@@ -1512,6 +1513,7 @@
 				D638A1D42B177A8D0077CAC5 /* fishhook.c */,
 				D638A1D62B177AB20077CAC5 /* fishhook.h */,
 				D638A1D82B178C170077CAC5 /* JIT.swift */,
+				D61B4C792B22ADD500D6649C /* ptrace.h */,
 			);
 			path = JIT;
 			sourceTree = "<group>";

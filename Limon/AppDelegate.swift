@@ -10,17 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let result = enableJIT()
-        switch result {
-        case 1:
-            print("JIT Enabled.")
-        case 0:
-            print("Failed to enable JIT.")
-        case -1:
-            print("JIT is already enabled or entitlements are missing.")
-        default:
-            print("enableJIT() returned unknown exit code.")
-        }
+        let _ = enableJIT()
 
         // Override point for customization after application launch.
         return true

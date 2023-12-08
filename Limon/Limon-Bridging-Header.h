@@ -14,6 +14,7 @@
 #import "OnboardingKit.h"
 
 // JIT
-#import "Controllers/JIT/JIT.m"
-#import "Controllers/JIT/JIT.h"
-#import "Controllers/JIT/fishhook.h"
+#import "Controllers/JIT/ptrace.h"
+//#import "Controllers/JIT/JIT.m"
+//#import "Controllers/JIT/JIT.h"
+//#import "Controllers/JIT/fishhook.h"
